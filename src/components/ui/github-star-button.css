@@ -1,0 +1,49 @@
+.github-star-btn {
+  cursor: pointer;
+  background: #000000;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.15); /* Hafif belirginlik için */
+  padding: 14px 30px;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 100px;
+  transition: all 0.5s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.github-star-btn:hover {
+  scale: 1.05;
+  border-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 10px 30px -10px rgba(255,255,255,0.1);
+}
+
+.github-star-btn:active {
+  scale: 1;
+}
+
+.github-star-btn:hover .icon {
+  fill: #ffff00;
+  scale: 1.1;
+  rotate: 360deg;
+  filter: drop-shadow(0 0 5px rgba(255, 208, 0, 0.8)) drop-shadow(0 0 10px rgba(255, 208, 0, 0.6));
+}
+
+.github-star-btn:hover .text {
+  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.2)) drop-shadow(0 0 10px rgba(255, 255, 255, 0.4));
+}
+
+.github-star-btn .text {
+  transition: all 1s ease;
+}
+
+.github-star-btn .icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-top: -2px;
+  transition: all 1s ease;
+}
