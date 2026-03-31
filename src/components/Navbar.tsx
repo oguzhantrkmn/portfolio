@@ -51,21 +51,10 @@ export default function Navbar() {
       className={`fixed top-0 left-0 right-0 z-[9999] transition-all duration-500 flex justify-center mt-4 sm:mt-6 px-2 sm:px-4 md:px-6 pointer-events-none w-full max-w-[100vw] overflow-hidden`}
     >
       <div 
-        className={`flex items-center gap-1 md:gap-8 rounded-[2rem] transition-all duration-500 overflow-x-auto overflow-y-hidden no-scrollbar max-w-full md:pr-0 pl-2 md:pl-6 pointer-events-auto ${
-          scrolled ? "bg-black/80 backdrop-blur-3xl border border-white/20 shadow-2xl shadow-black/50 py-1.5 px-1.5 md:pr-1.5" : "bg-transparent py-0"
+        className={`flex items-center gap-1 md:gap-8 rounded-[2rem] transition-all duration-500 overflow-x-auto overflow-y-hidden no-scrollbar max-w-full pointer-events-auto ${
+          scrolled ? "bg-black/80 backdrop-blur-3xl border border-white/20 shadow-2xl shadow-black/50 py-1.5 px-1.5" : "bg-transparent py-0"
         }`}
       >
-        {/* Logo */}
-        <Link
-          to="hero"
-          smooth={true}
-          offset={-100}
-          duration={800}
-          className="text-white font-semibold tracking-tight cursor-pointer hidden md:block"
-        >
-          OĞUZHAN TÜRKMEN
-        </Link>
-        
         {/* Limelight Nav Menu */}
         <LimelightNav 
             items={items} 
