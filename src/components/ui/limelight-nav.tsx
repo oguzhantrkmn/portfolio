@@ -7,7 +7,7 @@ const DefaultBellIcon = (props: React.SVGProps<SVGSVGElement>) => <svg {...props
 
 export type NavItem = {
   id: string | number;
-  icon?: React.ReactElement;
+  icon?: any;
   label?: string;
   onClick?: () => void;
 };
@@ -81,7 +81,7 @@ export const LimelightNav = ({
             onClick={() => handleItemClick(index, onClick)}
             aria-label={label}
           >
-            {icon && cloneElement(icon, {
+            {icon && cloneElement(icon as React.ReactElement<any>, {
               className: `w-5 h-5 transition-opacity duration-200 ease-in-out ${
                 activeIndex === index ? 'opacity-100 text-white' : 'opacity-50 text-zinc-100'
               } ${icon.props.className || ''} ${iconClassName || ''}`,

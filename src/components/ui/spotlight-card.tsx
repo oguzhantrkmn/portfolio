@@ -89,10 +89,10 @@ const GlowCard: React.FC<GlowCardProps> = ({
     };
 
     if (width !== undefined) {
-      baseStyles.width = typeof width === 'number' ? `${width}px` : width;
+      (baseStyles as any).width = typeof width === 'number' ? `${width}px` : width;
     }
     if (height !== undefined) {
-      baseStyles.height = typeof height === 'number' ? `${height}px` : height;
+      (baseStyles as any).height = typeof height === 'number' ? `${height}px` : height;
     }
 
     return baseStyles as React.CSSProperties;

@@ -187,8 +187,8 @@ export default function RadialOrbitalTimeline({
             return (
               <div
                 key={item.id}
-                ref={(el) => (nodeRefs.current[item.id] = el)}
-                className="absolute transition-all duration-700 ease-[cubic-bezier(0.2,0.8,0.2,1)] cursor-pointer"
+                ref={(el) => { nodeRefs.current[item.id] = el; }}
+                className="absolute transition-all duration-700 ease-[cubic-bezier(0.2,0.8,0.2,1)] will-change-transform cursor-pointer"
                 style={nodeStyle}
                 onClick={(e) => {
                   e.stopPropagation();
