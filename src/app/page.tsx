@@ -1,4 +1,5 @@
 import Navbar from "@/components/Navbar";
+import Preloader from "@/components/Preloader";
 import HeroScrollAnimation from "@/components/HeroScrollAnimation";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
@@ -11,7 +12,9 @@ import { DottedSurface } from "@/components/ui/dotted-surface";
 
 export default function Home() {
   return (
-    <main className="relative bg-black min-h-screen selection:bg-white/30 text-white font-sans font-light">
+    <>
+      <Preloader />
+      <main className="relative bg-black min-h-screen selection:bg-white/30 text-white font-sans font-light">
       {/* Premium Background */}
       <DottedSurface className="fixed inset-0 z-0" />
       
@@ -29,5 +32,6 @@ export default function Home() {
         <Footer />
       </div>
     </main>
+    </>
   );
 }
