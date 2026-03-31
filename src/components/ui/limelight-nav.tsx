@@ -77,20 +77,20 @@ export const LimelightNav = ({
           <a
             key={id}
             ref={el => { navItemRefs.current[index] = el; }}
-            className={`relative z-20 flex h-full cursor-pointer items-center justify-center px-4 md:px-6 ${iconContainerClassName}`}
+            className={`relative z-20 flex h-full cursor-pointer items-center justify-center px-3 sm:px-4 md:px-6 ${iconContainerClassName}`}
             onClick={() => handleItemClick(index, onClick)}
             aria-label={label}
           >
             {icon && cloneElement(icon as React.ReactElement<any>, {
-              className: `w-5 h-5 transition-opacity duration-200 ease-in-out ${
+              className: `w-4 h-4 sm:w-5 sm:h-5 transition-opacity duration-200 ease-in-out ${
                 activeIndex === index ? 'opacity-100 text-white' : 'opacity-50 text-zinc-100'
               } ${icon.props.className || ''} ${iconClassName || ''}`,
             })}
             
             {label && (
-                <span className={`text-sm tracking-wide transition-all duration-300 ease-in-out ${
+                <span className={`text-[11px] sm:text-xs md:text-sm tracking-widest sm:tracking-wide transition-all duration-300 ease-in-out ${
                     activeIndex === index ? 'opacity-100 font-medium text-white' : 'opacity-60 font-light text-zinc-300'
-                } ${icon ? 'ml-2' : ''}`}>
+                } ${icon ? 'ml-1.5 sm:ml-2' : ''}`}>
                     {label}
                 </span>
             )}

@@ -28,13 +28,13 @@ export default function Projects() {
              <h2 className="text-4xl md:text-5xl font-semibold tracking-tight text-white">Öne Çıkan Projeler</h2>
         </div>
 
-        <div className="flex justify-center mb-16">
-          <div className="inline-flex items-center gap-2 p-1.5 glass-panel rounded-full border border-white/5">
+        <div className="flex justify-center mb-16 w-full">
+          <div className="flex flex-wrap justify-center items-center gap-2 p-1.5 glass-panel rounded-3xl md:rounded-full border border-white/5 mx-2 md:mx-0">
             {categories.map((cat) => (
               <button
                 key={cat}
                 onClick={() => setFilter(cat)}
-                className={`px-6 py-2.5 rounded-full text-sm font-medium transition-all duration-300 ${
+                className={`px-4 sm:px-6 py-2 sm:py-2.5 rounded-full text-xs sm:text-sm font-medium transition-all duration-300 ${
                   filter === cat
                     ? "bg-white text-black shadow-lg"
                     : "text-zinc-400 hover:text-white hover:bg-white/5"

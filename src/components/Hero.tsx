@@ -37,7 +37,7 @@ export default function Hero() {
             <span>Çerkezköy, Tekirdağ, Türkiye</span>
           </div>
 
-          <div className="flex flex-wrap justify-center lg:justify-start gap-8 mt-2">
+          <div className="flex flex-col sm:flex-row flex-wrap justify-center lg:justify-start gap-4 sm:gap-8 mt-2 w-full max-w-full sm:w-auto">
             <HandDrawnButton href="#projects" text="Projelerimi Keşfet" />
             <HandDrawnButton href="#contact" text="İletişime Geç" />
           </div>
@@ -48,9 +48,9 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, delay: 0.2 }}
-          className="relative h-full flex items-center justify-center w-full z-10 order-1 lg:order-2 pointer-events-none lg:pointer-events-auto"
+          className="relative h-full flex items-center justify-center w-full z-10 order-1 lg:order-2 pointer-events-none lg:pointer-events-auto mt-10 lg:mt-0"
         >
-          <div className="w-full max-w-[600px] aspect-square relative -mr-12 opacity-80 mix-blend-screen">
+          <div className="w-full max-w-[320px] sm:max-w-[400px] md:max-w-[600px] aspect-square relative mr-0 lg:-mr-12 opacity-80 mix-blend-screen scale-110 lg:scale-100">
             <ParticleTextEffect words={["OĞUZHAN", "TÜRKMEN", "DEVELOPER", "Flutter", "React Native", "React.js", "Laravel", "Supabase"]} />
           </div>
         </motion.div>

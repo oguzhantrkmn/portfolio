@@ -30,8 +30,8 @@ export default function Experience() {
           <h2 className="text-4xl md:text-5xl font-semibold tracking-tight text-white">İş Deneyimim</h2>
         </div>
 
-        <div className="w-full bg-[#0a0a0a] rounded-[40px] border border-white/5 overflow-hidden shadow-2xl relative min-h-[700px]">
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-2xl h-[400px] bg-blue-500/10 blur-[120px] rounded-full pointer-events-none" />
+        <div className="w-full bg-[#0a0a0a] rounded-[30px] md:rounded-[40px] border border-white/5 overflow-hidden shadow-2xl relative min-h-[500px] md:min-h-[700px]">
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-[90%] md:max-w-2xl h-[300px] md:h-[400px] bg-blue-500/10 blur-[90px] md:blur-[120px] rounded-full pointer-events-none" />
             <RadialOrbitalTimeline timelineData={timelineData} />
             <div className="absolute bottom-6 left-6 text-sm text-zinc-500 font-light tracking-wide opacity-50 pointer-events-none">
               * Düğümlere (Nodes) tıklayarak detaylı bilgileri görebilirsiniz.
