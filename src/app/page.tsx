@@ -1,4 +1,5 @@
 import Navbar from "@/components/Navbar";
+import HeroScrollAnimation from "@/components/HeroScrollAnimation";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Experience from "@/components/Experience";
@@ -15,6 +16,7 @@ export default function Home() {
       <DottedSurface className="fixed inset-0 z-0" />
       
       <div className="relative z-10">
+        <HeroScrollAnimation />
         <Navbar />
         <div className="space-y-32 sm:space-y-48 pb-32">
           <Hero />
