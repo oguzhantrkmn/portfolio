@@ -7,7 +7,7 @@ export const personalInfo = {
   phone: "0542 622 9055",
   birthDate: "22 Eylül 2002",
   github: "https://github.com/oguzhantrkmn",
-  linkedin: "https://linkedin.com/in/oguzhanturkmen",
+  linkedin: "https://www.linkedin.com/in/o%C4%9Fuzhan-t%C3%BCrkmen-303090236/",
   summary:
     "Mobil ve web geliştirme alanında uzmanlaşmış, Flutter ve React Native ile mobil uygulamalar, PHP, HTML, CSS, JavaScript, React.js ve Laravel ile web uygulamaları geliştiren bir yazılım geliştiricisiyim. MySQL ve Firebase veritabanları konusunda deneyimliyim. Temel düzeyde C# bilgisine sahibim. B1 seviyesinde İngilizce biliyorum. Ölçeklenebilir, yenilikçi ve kullanıcı odaklı yazılım çözümleri üretmeye odaklanıyorum.",
 };

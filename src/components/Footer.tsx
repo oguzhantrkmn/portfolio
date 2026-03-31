@@ -1,5 +1,5 @@
 import { personalInfo } from "@/lib/data";
-import CvDownloadButton from "./ui/cv-download-button";
+
 import { SocialLinks } from "./ui/social-links";
 
 export default function Footer() {
@@ -14,9 +14,6 @@ export default function Footer() {
              <span className="text-zinc-500 font-light">© {currentYear} Tüm hakları saklıdır.</span>
         </div>
 
-        <div className="flex justify-center flex-1 scale-90 md:scale-100">
-            <CvDownloadButton />
-        </div>
 
         <div className="flex gap-6 flex-1 justify-center md:justify-end scale-90 origin-right">
              <SocialLinks />
